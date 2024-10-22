@@ -1,0 +1,60 @@
+body {
+  background: #6c373f;
+  display: flex;
+  justify-content: center;
+  }
+
+#alice-container {
+  width: 90vh;
+  display: grid;
+  place-items: center;
+  grid-template-areas:
+    "a1 . ."
+    ". a2 ."
+    ". . a3";
+}
+
+#alice1 {
+  grid-area: a1;
+}
+
+#alice2 {
+  grid-area: a2;
+}
+
+#alice3 {
+  grid-area: a3;
+}
+#control-panel {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#control-panel input,
+#control-panel button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#control-panel button {
+  cursor: pointer;
+  background-color: #6c373f;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#control-panel button:hover {
+  background-color: #5a2c33;
+}
